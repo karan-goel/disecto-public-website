@@ -119,8 +119,8 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #262626;
-  /*border-bottom: 2px solid #eceefe;*/
+  background: #f6fbff;
+  border-bottom: 2px solid #e8f4fd;
   transition: all 0.5s;
   z-index: 997;
   padding: 10px 0;
@@ -174,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Krub", sans-serif;
   font-size: 20px;
   font-weight: 600;
-  color: #fff;
+  color: #57BEFD;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -375,13 +375,13 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: #fff;
+  background: white;
   border-bottom: 2px solid white;
   text-align: center;
 }
 
 #hero .container {
-  padding-top: 70px;
+  padding-top: 40px;
 }
 
 #hero h1 {
@@ -391,14 +391,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 56px;
   color: #141d2b;
   width: 60%;
-  color: #fff;
+  color: #2d405f;
 }
 
 #hero h2 {
   color: #466393;
   margin: 15px 0 0 0;
   font-size: 24px;
-  color: #ffffff;
+  color: #2d405f;
 }
 
 #hero .btn-get-started {
@@ -421,9 +421,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .hero-img {
   max-width: 60%;
-  max-height: 360px;
-  margin-top: 10px;
-  margin-bottom: 50px;
+  margin-top: 40px;
+  height: 400px;
+  mix-blend-mode: multiply;
 }
 
 @media (max-width: 992px) {
@@ -446,6 +446,7 @@ h1, h2, h3, h4, h5, h6 {
     height: auto;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Sections General
@@ -492,15 +493,19 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: #fff;
+  background: #2d405f;
   background-size: cover;
   padding: 60px 0;
   position: relative;
-  color: #000;
+  color: #fff;
 }
 
 .about .content {
   padding: 30px 30px 30px 0;
+}
+
+.about .section-title h2 {
+    color: #fff;
 }
 
 .about .content h3 {
@@ -567,7 +572,7 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  background: rgb(243, 235, 235);
+  background: #e1effa;
   padding: 15px 0;
   text-align: center;
 }
@@ -585,24 +590,32 @@ section {
 
 @media (max-width: 768px) {
   .clients img {
-    max-width: 40%;
+    max-width: 80%;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
 .features {
-  background: #466393;
+  background: #fff;
 }
 
-.features .content + .content {
-  margin-top: 100px;
+.features .content  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .features .content h3 {
   font-weight: 600;
   font-size: 26px;
+
+}
+
+.features .icon-box{
+  padding: 30px 40px;
 }
 
 .features .content ul {
@@ -675,7 +688,7 @@ section {
 --------------------------------------------------------------*/
 .services {
   background: #2d405f;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
 }
 
 .services .section-title h2, .services .section-title p {
@@ -687,13 +700,17 @@ section {
 }
 
 .services .icon-box {
-  padding: 50px 30px;
+  padding: 25px 30px;
   position: relative;
   overflow: hidden;
   background: #fff;
   transition: all 0.3s;
   border-radius: 5px;
   text-align: center;
+}
+
+.services .icon-box h4{
+  padding: 10px
 }
 
 .services .icon-box:hover {
@@ -1273,6 +1290,18 @@ section {
   background: #fff;
 }
 
+.contact .info-box iframe{
+  padding: 100px;
+}
+
+.contact .info-box2 {
+  color: #2d405f;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 5px 5px;
+  background: #fff;
+}
+
 .contact .info-box i {
   font-size: 32px;
   color: #3b4ef8;
@@ -1291,6 +1320,7 @@ section {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  margin: auto;
 }
 
 .contact .php-email-form {

@@ -1,4 +1,4 @@
-var text = ["Securing", "Analysing"];
+var text = ["Analytics", "Sharing"];
 var counter = 0;
 var elem = document.getElementById("changeText");
 setInterval(change, 2500);
